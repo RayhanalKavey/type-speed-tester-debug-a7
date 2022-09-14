@@ -50,6 +50,7 @@ const typeController = (e) => {
     display.innerHTML += `<span class="red">${
       newLetter === " " ? "▪" : newLetter
     }</span>`;
+    errorCount++;
   }
 
   // check if given question text is equal to user typed text
@@ -90,7 +91,6 @@ const gameOver = () => {
     <button onclick="closeModal()">Close</button>
   `;
   addHistory(questionText, timeTaken, errorCount);
-
   // restart everything
   startTime = null;
   errorCount = 0;
@@ -119,7 +119,6 @@ const start = () => {
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
-      // console.log(display);
 
       clearInterval(startCountdown);
 
@@ -138,8 +137,6 @@ displayHistory();
 // Show typing time spent
 setInterval(() => {
   const currentTime = new Date().getTime();
-
-  // console.log(new Date().getTime());
   const timeSpent = parseInt((currentTime - startTime) / 1000);
 
   document.getElementById("show-time").innerHTML = `${
