@@ -185,7 +185,17 @@ button {
   position: fixed;
   top: 0;
 }
-
+/* -------------------
+Styles for blog start
+-------------------*/
+.blog-container {
+  color: rgb(255, 255, 255);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/*------------------
+ Media query 
+ ------------------*/
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
