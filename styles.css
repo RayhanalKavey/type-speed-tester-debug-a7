@@ -206,11 +206,41 @@ Styles for blog start
   padding-bottom: 25px;
 }
 .answer {
-  font-size: 24px;
+  color: #bbb8b8;
+  font-size: 20px;
   padding-left: 30px;
 }
 .undefined-list {
   margin: 10px 0 0 70px;
+}
+/* table */
+.table-ans {
+  display: flex;
+  justify-content: center;
+}
+table {
+  font-size: 20px;
+  border-collapse: collapse;
+  margin: 2rem 3rem;
+  color: #bbb8b8;
+
+  justify-content: center;
+}
+th,
+td {
+  border: 1px solid gray;
+  padding: 10px 10px;
+}
+th {
+  text-align: center;
+}
+tr {
+  /* padding: 5px; */
+  text-align: left;
+}
+/* qsn 2 */
+h4 {
+  color: black;
 }
 /* -------------------
 Styles for blog end

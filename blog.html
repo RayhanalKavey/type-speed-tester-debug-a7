@@ -22,13 +22,75 @@
         <h2 class="question">
           1. What are the differences between local storage and session storage?
         </h2>
-        <p class="answer"><span>&#8594</span></p>
+        <p class="answer "><span>&#8594 Differences are given below:</span>
+         <div class="table-ans">
+           <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Local Storage</th>
+                <th>Session Storage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- row-1 -->
+              <tr>
+                <td>Expires</td>
+                <td>never</td>
+                <td>On tab close</td>
+              </tr>
+              <!-- row-2 -->
+              <tr>
+                <td>Storage location </td>
+                <td>Browser only</td>
+                <td>Browser only</td>
+              </tr>
+              <!-- row-3 -->
+              <tr>
+                <td>Sent with requests </td>
+                <td>No</td>
+                <td>No</td>
+
+              </tr>
+              <!-- row-4 -->
+              <tr>
+                <td>
+                  Capacity
+                </td>
+                <td>
+                 10mb
+                </td>
+                <td>
+                5mb
+                </td>
+              </tr>
+              <!-- row-5 -->
+              <tr>
+                <td>Browsers</td>
+                <td>
+                 HTML 5
+                </td>
+                <td>
+                HTML 5
+                </td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+        </p>
       </section>
       <section  class="qsn-section">
         <h2 class="question">
           2. What are the differences between global scope and local scope?
         </h2>
         <p class="answer"><span>&#8594</span> 
+          A variable's scope is the range of the script where it is visible. Variables have either global or local scope. A global variable exists only once in a script, and is visible in every function. Modifications to it in one function are permanent and visible to all functions. Unless declared otherwise, all variables in a script are global. Global variables are useful for values that are relatively constant, or that many functions in the script must access, such as a session id.
+<br>
+<br>
+          A local variable, however, has a limited scope, it exists only within the block that it is declared in. Once that block ends, the variable is destroyed and its values lost. A local variable of the same name declared elsewhere is a different variable. A local variable can even exist multiple times simultaneously, if its block is entered again before it's exited - i.e. a recursive function call. Each call of the function will have a distinct local variable.
+<br>
+<br>
+          Local variables must be explicitly declared, either as parameters to a script function (here), or with the LOCAL statement (here). They are used to clearly pass parameters to functions, or as temporary "scratch space" for a function without the side effects of global variable modification.
 </p>
       </section>
       <section  class="qsn-section">
