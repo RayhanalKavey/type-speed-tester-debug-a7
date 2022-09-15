@@ -81,23 +81,32 @@
       </section>
       <section  class="qsn-section">
         <h2 class="question">
-          2. What are the differences between global scope and local scope?
+          2. What are the differences between global scope and block scope?
         </h2>
         <p class="answer"><span>&#8594</span> 
           A variable's scope is the range of the script where it is visible. Variables have either global or local scope. A global variable exists only once in a script, and is visible in every function. Modifications to it in one function are permanent and visible to all functions. Unless declared otherwise, all variables in a script are global. Global variables are useful for values that are relatively constant, or that many functions in the script must access, such as a session id.
 <br>
 <br>
-          A local variable, however, has a limited scope, it exists only within the block that it is declared in. Once that block ends, the variable is destroyed and its values lost. A local variable of the same name declared elsewhere is a different variable. A local variable can even exist multiple times simultaneously, if its block is entered again before it's exited - i.e. a recursive function call. Each call of the function will have a distinct local variable.
+The variables that are declared within the block scope are comparable to local ones. They are available within the block that they are defined.
 <br>
 <br>
-          Local variables must be explicitly declared, either as parameters to a script function (here), or with the LOCAL statement (here). They are used to clearly pass parameters to functions, or as temporary "scratch space" for a function without the side effects of global variable modification.
-</p>
+The main difference between the local scope and block scope is that the block statements (e.g. if conditions or for loops), don't create a new scope. So the var keyword will not have an effect, because the variables are still in the same scope.
+<br>
+<br>
+Global variables last as long as the application is running.
+<br>
+<br>
+Block statements don't create a new scope and the block scope does not apply to var keyword.</p>
       </section>
       <section  class="qsn-section">
         <h2 class="question">
           3. How JavaScript event loop works?
         </h2>
-        <p class="answer"><span>&#8594</span> The Event Loop has one simple job to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+        <p class="answer"><span>&#8594</span> 
+          JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.
+          <br>
+          <br>
+          The Event Loop has one simple job to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
       </section>
       <section  class="qsn-section">
         <h2 class="question">
