@@ -193,6 +193,28 @@ Styles for blog start
   max-width: 1300px;
   margin: 0 auto;
 }
+.blog-heading {
+  text-align: center;
+  margin: 32px;
+  font-size: 50px;
+}
+.qsn-section {
+  padding-bottom: 60px;
+}
+.question {
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+.answer {
+  font-size: 24px;
+  padding-left: 30px;
+}
+.undefined-list {
+  margin: 10px 0 0 70px;
+}
+/* -------------------
+Styles for blog end
+-------------------*/
 /*------------------
  Media query 
  ------------------*/

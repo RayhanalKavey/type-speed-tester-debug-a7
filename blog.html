@@ -28,22 +28,29 @@
         <h2 class="question">
           2. What are the differences between global scope and local scope?
         </h2>
-        <p class="answer"><span>&#8594</span></p>
+        <p class="answer"><span>&#8594</span> 
+</p>
       </section>
       <section  class="qsn-section">
         <h2 class="question">
           3. How JavaScript event loop works?
         </h2>
-        <p class="answer"><span>&#8594</span></p>
+        <p class="answer"><span>&#8594</span> The Event Loop has one simple job to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
       </section>
       <section  class="qsn-section">
         <h2 class="question">
           4. How many ways you can get undefined?
         </h2>
-        <ul class="answer"><span>&#8594 8 ways of getting undefined:</span>
-          <li class="undefined-list" > Variable that is not initialize
-      </li>
-    </ul>
+        <ol class="answer"><span>&#8594 8 ways of getting undefined:</span>
+          <li class="undefined-list" > Variable that is not initialize.</li>
+          <li class="undefined-list" > If don't return anything from function</li>
+          <li class="undefined-list" > Parameter that is not passed in a function will be undefined</li>
+          <li class="undefined-list" > If return has nothing on the right side will return undefined</li>
+          <li class="undefined-list" > Property that doesn't exist on an object will give you undefined</li>
+          <li class="undefined-list" > Access array elements outside of the array range.</li>
+          <li class="undefined-list" > Deleting an element inside an array.</li>
+          <li class="undefined-list" > Set a value directly to undefined.</li>
+        </ol>
       
       </section>
      
